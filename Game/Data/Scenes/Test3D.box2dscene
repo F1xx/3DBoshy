@@ -1,0 +1,120 @@
+{
+	"GameObjects":	[{
+			"Name":	"Player",
+			"Pos":	[0.57834017276763916, 1.9987211227416992, 0.026042759418487549],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.4256579577922821, 0.4256579577922821, 0.4256579577922821],
+			"Flags":	["Player"],
+			"Components":	[{
+					"Type":	"3D Collision Object",
+					"PrefabComponentID":	0,
+					"Mass":	1,
+					"Primitive":	"Convex Hull",
+					"Scale":	[1, 1, 1],
+					"OBJ":	"Data/Meshes/Boshy.obj.mymesh",
+					"OBJFilename":	"Boshy.obj"
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrefabComponentID":	0,
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/Boshy.obj.mymesh",
+					"OBJFilename":	"Boshy.obj",
+					"Material":	"Lighting2",
+					"Texture":	"Data/Textures/Megaman.png",
+					"Shader":	"Shader_Texture",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Plane",
+			"Pos":	[0, -5, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	[],
+			"Components":	[{
+					"Type":	"3D Collision Object",
+					"PrefabComponentID":	0,
+					"Mass":	0,
+					"Primitive":	"Static Plane",
+					"Scale":	[1, 1, 1]
+				}, {
+					"Type":	"Mesh-Primitive",
+					"PrefabComponentID":	0,
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"MPType":	"Plane",
+					"PlaneSize":	[10, 10],
+					"PlaneVertCountx":	10,
+					"PlaneVertCounty":	10,
+					"UVs per Quad":	0,
+					"PlaneUVStart":	[0, 0],
+					"PlaneUVRange":	[1, 1],
+					"SphereRadius":	1,
+					"Material":	"Lighting",
+					"Texture":	"Data/Textures/Megaman.png",
+					"Shader":	"Shader_Texture",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Ground",
+			"Pos":	[0, 0, 1.347923755645752],
+			"Rot":	[0, 0, 0],
+			"Scale":	[4, 1, 4],
+			"Flags":	[],
+			"Components":	[{
+					"Type":	"3D Collision Object",
+					"PrefabComponentID":	0,
+					"Mass":	0,
+					"Primitive":	"Cube",
+					"Scale":	[2.2000000476837158, 1, 1]
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrefabComponentID":	0,
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/Cube.obj.mymesh",
+					"OBJFilename":	"Cube.obj",
+					"Material":	"Lighting2",
+					"Texture":	"Data/Textures/Megaman.png",
+					"Shader":	"Shader_Texture",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Sphere",
+			"Pos":	[0, 0, -3.8871660232543945],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	[],
+			"Components":	[{
+					"Type":	"3D Collision Object",
+					"PrefabComponentID":	0,
+					"Mass":	1,
+					"Primitive":	"Sphere",
+					"Scale":	[1, 1, 1]
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrefabComponentID":	0,
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/Sphere.obj.mymesh",
+					"OBJFilename":	"Sphere.obj",
+					"Material":	"Lighting2",
+					"Texture":	"Data/Textures/Megaman.png",
+					"Shader":	"Shader_Texture",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Point Light",
+			"Pos":	[0, 5.5603752136230469, 3.87756609916687],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["5"],
+			"Components":	[{
+					"Type":	"Light",
+					"PrefabComponentID":	0,
+					"LightType":	"Point",
+					"Color":	[0.79901957511901855, 0.05875144898891449, 0.05875144898891449, 1],
+					"Atten":	[90, 0, 0.090000003576278687]
+				}]
+		}]
+}
